@@ -141,15 +141,7 @@ position: absolute;
 	width: 13.8vw;
 	object-fit: contain;
 	height: 40vw;
-}
-
-/* andere möglichkeit für schatten, aktuell beim ersten slider aktiv */
-.shadow{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
-	filter: grayscale(100%) blur(10px) brightness(0.7);
+	filter: drop-shadow(0 0 10px grey);
 }
 
 .outer.menu .d {
@@ -364,6 +356,7 @@ position: absolute;
 	height: 29vw;
 	object-fit: contain;
 	padding: 50px;
+	filter: drop-shadow(0 0 10px grey);
 }
 
 .outer.products .inner .productwrap .product .caption {
@@ -439,6 +432,7 @@ position: absolute;
     padding: 10px 50px;
 	font-size: 16px;
 	font-weight: 500;
+	transition: 0.3s;
 }
 
 .outer.cta .inner .wrap a:hover {
