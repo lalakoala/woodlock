@@ -1,0 +1,678 @@
+@import url("https://use.typekit.net/abq2rut.css");
+
+body {
+    font-family: "montserrat", sans-serif;
+    line-height: 1.8;
+    color: black;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*:focus {
+	outline: none;
+}
+
+.outer {
+    width: 100%;
+	margin-bottom: 200px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.inner {
+    width: 100%;
+    margin: auto;
+    padding: 0 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 46px;
+}
+
+
+/* MENUBUTTON UND LOGO */
+.menuwrap {
+	position: absolute;
+	top: 80px;
+	right: 80px;
+	z-index: 5;
+}
+
+.logo {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	z-index: 5;
+}
+
+.hamburger-inner::before {
+	background: linear-gradient(to right, #4d03a4 0%,#156cd1 100%); !important;
+}
+
+.hamburger-inner {
+	background: linear-gradient(to right, #006937 0%,#139953 100%) !important;
+	/*margin-top: 2px !important;*/
+}
+
+.hamburger-inner::after {
+	background: linear-gradient(to right, #f25434 0%,#f8992f 100%); !important;
+}
+
+#myhamid::before {
+	content:"MENÜ";
+	position: absolute;
+	right: 58px;
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.hamburger {
+	padding: 0 !important;
+}
+
+/* NAVIGATION */
+#navigation {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 150px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 1;
+}
+
+#navigation ul li a {
+	display: block;
+	font-size: 1em ;
+	padding: 20px;
+	width: 50%;
+/*	border-bottom: 1px solid lightgrey; */
+	margin: auto;
+}
+
+#navigation ul li a:hover {
+	color: rgb(244, 109, 33);
+}
+
+
+/* SLIDER */
+.outer.menu .background {
+	width: 38.38%;
+	position: absolute;
+	z-index: -2; 
+	height: 50vw;
+    object-fit: cover;
+}
+
+.outer.menu .sliderinner > div > div {
+position: absolute;
+    left: 38.38%;
+    width: 14%;
+    transform: translateX(-50%); 
+    top: 80px
+}
+
+.outer.menu .sliderouter .sliderinner .wrap {
+	height: 61vw;
+    width: 100%;
+	position: relative;
+}
+
+.outer.menu .sliderinner .bottle{
+	width: 13.8vw;
+	object-fit: contain;
+	height: 40vw;
+}
+
+/* andere möglichkeit für schatten, aktuell beim ersten slider aktiv */
+.shadow{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	filter: grayscale(100%) blur(10px) brightness(0.7);
+}
+
+.outer.menu .d {
+	position: absolute;
+	top: 29%;
+	left: 23vw;
+	width: max-content;
+	height: 100%;
+}
+
+.outer.menu .sliderouter .sliderinner .d h1 {
+	padding: 1vw 0;
+	font-size: 2vw;
+}
+
+.outer.menu .sliderouter .sliderinner .d > p {
+	padding-bottom: 2.5vw;
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 0.97vw;
+}
+
+.outer.menu .d img {
+	width: 13%;
+	max-width: 50px;
+}
+
+.outer.menu {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.arrow span {
+	background-image: url(assets/images/pfeilrechtsorange.png);
+	filter: grayscale(100%) brightness(0);
+    cursor: pointer;
+	position: absolute;
+    height: 21px;
+    width: 11px;
+	display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+	top: 46vw;
+	transition: 0.3s;
+}
+
+.arrow.prev span {
+	transform: scaleX(-1);
+    right: 170px; 
+}
+
+.arrow.next span {
+	right: 80px;	
+}
+
+.arrow.prev span::after {
+	content: "d  |";
+	white-space: pre;
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 14px;
+	position: absolute;
+	top: -4px;
+    left: -43px;
+	transform: scaleX(-1);
+}
+
+.arrow.next span::before {
+	content: "b";
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 14px;
+	position: absolute;
+	top: -4px;
+    left: -28px;
+}
+
+.arrow span:hover {
+	filter: grayscale(0%) brightness(1);
+	transition: 0.3s;
+}
+
+
+
+/* SLOGAN */
+.outer.slogan .inner {
+	max-width: 1250px;
+	margin: auto;
+}
+
+.outer.slogan .inner h2 {
+	padding-bottom: 30px;
+	font-weight: 600;
+}
+
+.outer.slogan .inner p {
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.outer.slogan {
+	margin-bottom: 260px;
+}
+
+
+/* BOXES */
+.outer.boxes .inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1650px;
+}
+
+.outer.boxes .inner a {
+	display: block;
+	width: 48%;
+	max-height:520px;
+	margin: 15px auto;
+	color: white;
+	min-width: 600px;
+	transition: transform 0.2s;
+}
+
+.outer.boxes .inner a .box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 66%;
+	
+}
+
+.outer.boxes .inner a:hover {
+	transform: scale(1.03);
+}
+
+.outer.boxes .inner a .box h2 {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+ .outer.boxes .inner a .box .caption {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    right: 35px;
+    border-top: 1px solid white;
+    text-align: left;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+	vertical-align: top;
+	font-family:"acumin-pro";
+	font-size: 22px;
+	line-height: 1.4;
+}
+
+.outer.boxes .inner a .box .caption::after {
+	content: "";
+    background-image: url(assets/images/pfeilrechtsorange.png);
+    filter: grayscale(100%) brightness(3);
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    right: 0;
+    top: 50px;
+}
+
+.outer.boxes .inner a .box .caption p {
+	max-width: 500px;
+	margin-right: 30px;
+}
+
+.outer.boxes .inner a .box .caption img {
+	filter: invert(100%);
+	height: 21px;
+	width: 11px;
+	margin-top: 18px;
+}
+
+.outer.boxes {
+	margin-bottom: 280px;
+}
+
+
+/* PRODUCTS */
+.outer.products .inner{
+	max-width: 1520px;
+}
+
+.outer.products .inner h2 {
+	padding-bottom: 60px;
+}
+
+.outer.products .inner .productwrap .product {
+	text-align: center;
+	position: relative;	
+}
+
+.outer.products .inner .productwrap {
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.outer.products .inner .productwrap .product > img {
+	vertical-align: middle;
+	width: 13vw;
+	height: 29vw;
+	object-fit: contain;
+	padding: 50px;
+}
+
+.outer.products .inner .productwrap .product .caption {
+	border-top: 1px solid black;
+	margin: 0px 20px 0 20px;
+	padding: 10px;
+}
+
+.outer.products .inner .productwrap .product .caption p:first-child {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 25px 5px 0 0;
+}
+
+.outer.products .inner .productwrap .product .caption > div {
+	margin: auto;
+	width: 152px;
+	text-align: left;
+}
+
+.outer.products .inner .productwrap .product .caption > div img {
+	width: 35px;
+	height: 35px;
+	margin-top: -5px;
+}
+
+.outer.products .inner .productwrap .product .caption p:last-child {
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.outer.products {
+	margin-bottom: 160px;
+}
+
+.line-break {display: none;}
+
+
+/* CTA */
+.outer.cta .inner img{
+	margin: auto;
+}
+
+.outer.cta .background {
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1250px;
+	margin: auto;
+	height: 580px;
+	text-align: center;
+	position: relative;
+}
+
+.outer.cta .inner .wrap {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.outer.cta .inner .wrap > p {
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.outer.cta .inner .wrap a {
+	border: 1px solid black;
+    display: block;
+    width: fit-content;
+    margin: 100px auto 0;
+    padding: 10px 50px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.outer.cta .inner .wrap a:hover {
+	color: rgb(244, 109, 33);
+	border: 1px solid rgb(244, 109, 33);
+	transition: 0.3s;
+}
+
+
+/* TEASER */
+.outer.teaser .inner {
+	max-width: 1650px;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.outer.teaser .inner .teaserbox {
+	width: 300px;
+	text-align: center;
+	position: relative;
+}
+
+.outer.teaser .inner .teaserbox .background {
+	background-repeat: no-repeat;
+	height: 150px;
+	background-position: center;
+}
+
+.outer.teaser .inner .teaserbox h2 {
+	font-size: 36px;
+	padding-bottom: 25px;
+}
+
+.outer.teaser .inner .teaserbox .textwrap > p {
+	height: 140px;
+}
+
+.outer.teaser .inner .teaserbox > p {
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.outer.teaser .inner .teaserbox a {
+	display: block;
+    width: -webkit-fill-available;
+}
+
+.more:after {
+	content: "";
+	display: inline-block;
+	background-image: url(assets/images/pfeilrechtsorange.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 20px;
+	width: 11px;
+	top: 4px;
+	position: relative;
+	margin-left: 10px;
+}
+.more {
+	font-weight: 500;
+	
+	font-size: 16px;
+	transition: 0.3s;
+}
+
+.more:hover {
+	color: rgb(244, 109, 33);
+	transition: 0.3s;
+}
+
+
+/* SEO */
+.outer.seo .inner {
+	max-width: 1400px;
+	margin: auto;
+}
+
+.outer.seo .inner h2 {
+	padding-bottom: 50px;
+}
+
+
+/* SCM */
+.outer.scm .inner {
+	max-width: 1650px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.outer.scm .inner .wrap {
+	width: 33.33%;
+	margin: 0 45px;
+}
+
+.outer.scm .inner .wrap .scminfo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	justify-content: space-between;
+}
+
+.outer.scm .inner .wrap .scminfo img {
+	object-fit: none;
+}
+
+.outer.scm .inner .wrap .scminfo div p:first-child {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.outer.scm .inner .wrap .scminfo div p:last-child {
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.outer.scm .inner .wrap .scminfo > div {
+	padding: 0 20px;
+	flex-grow: 2;
+}
+
+.outer.scm .inner .wrap .scmpreview {
+	display: flex;
+	justify-content: space-between;
+}
+
+.outer.scm .inner .wrap .scmpreview > div {
+	width: 33%;
+	height: 150px;
+	background-color: lightgray;
+}
+
+.outer.scm {
+	margin-bottom: 270px;
+}
+
+
+/* FOOTER */
+.outer.footer {
+	background-color: rgb(242, 242, 242);
+	position: relative;
+	bottom: 0px;
+}
+
+.outer.footer {
+	margin-bottom: 0;
+}
+
+.outer.footer .inner {
+	max-width: 1650px;
+	position: relative;
+}
+
+.outer.footer > img {
+	position: absolute;
+	bottom: 0;
+}
+
+.outer.footer .inner .wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px 0 150px 0;
+	align-items: end;
+	flex-wrap: wrap
+}
+
+.outer.footer .inner .wrap > a img {
+	object-fit: none;
+	padding-right: 11vw;
+}
+
+.outer.footer .inner .wrap .footermenu {
+	display: flex;
+	flex-grow: 2;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.outer.footer .inner * {
+	list-style-type: none;
+}
+
+.outer.footer .inner ul li a,
+.outer.footer .inner ul li:not(.head)  {
+	font-family:"acumin-pro";
+	font-weight: 300;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.outer.footer .inner ul li .head {
+	font-weight: 600;
+}
+
+.outer.footer .inner ul li a:hover,
+.outer.footer .inner ul li:not(.head):hover {
+	color: rgb(244, 109, 33);
+	transition: 0.3s;
+}
+
+.outer.footer .inner .head {
+	font-size: 15px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+.outer.footer .inner .wrap .kontakt {
+	padding-left: 5vw;
+}
+
+.outer.footer .inner .wrap .kontakt li a p {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.outer.footer .inner .wrap .kontakt .tel {
+	padding-top: 15px;
+}
+
+.outer.footer .inner .wrap .kontakt .tel a p {
+	font-size: 20px;
+}
+
+.outer.footer .inner .rechtliches {
+	display: flex;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 10px;
+	padding: 5px;
+}
+
+
