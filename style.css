@@ -44,7 +44,7 @@ h2 {
 }
 
 
-/* MENUBUTTON UND LOGO */
+/* LOGO MENU */
 .menuwrap {
 	position: absolute;
 	top: 80px;
@@ -225,7 +225,6 @@ position: absolute;
 }
 
 
-
 /* SLOGAN */
 .outer.slogan .inner {
 	max-width: 1250px;
@@ -357,6 +356,11 @@ position: absolute;
 	object-fit: contain;
 	padding: 50px;
 	filter: drop-shadow(0 0 10px grey);
+}
+
+.outer.products .inner .productwrap .product > img:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
 }
 
 .outer.products .inner .productwrap .product .caption {
@@ -563,10 +567,16 @@ position: absolute;
 	justify-content: space-between;
 }
 
-.outer.scm .inner .wrap .scmpreview > div {
+.outer.scm .inner .wrap .scmpreview > a {
 	width: 33%;
 	height: 150px;
 	background-color: lightgray;
+}
+
+.outer.scm .inner .wrap .scmpreview > a:hover {
+	transform: scale(1.03);
+	filter: drop-shadow(0 0 1px grey);
+	transition: 0.3s;
 }
 
 .outer.scm {
