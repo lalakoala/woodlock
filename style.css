@@ -351,10 +351,9 @@ position: absolute;
 
 .outer.products .inner .productwrap .product > img {
 	vertical-align: middle;
-	width: 13vw;
-	height: 29vw;
+	height: 550px;
 	object-fit: contain;
-	padding: 50px;
+	padding: 50px 0;
 	filter: drop-shadow(0 0 10px grey);
 }
 
@@ -365,8 +364,8 @@ position: absolute;
 
 .outer.products .inner .productwrap .product .caption {
 	border-top: 1px solid black;
-	margin: 0px 20px 0 20px;
-	padding: 10px;
+	margin: 0px 10px;
+	padding: 10px 40px;
 }
 
 .outer.products .inner .productwrap .product .caption p:first-child {
@@ -385,7 +384,8 @@ position: absolute;
 .outer.products .inner .productwrap .product .caption > div img {
 	width: 35px;
 	height: 35px;
-	margin-top: -5px;
+	position: absolute;
+	margin-top: 23px;
 }
 
 .outer.products .inner .productwrap .product .caption p:last-child {
